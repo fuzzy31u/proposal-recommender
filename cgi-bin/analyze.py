@@ -20,7 +20,7 @@ def main():
     page = 1
     trialPageCnt = 10
     dispCntPerPage = 6
-    connector = MySQLdb.connect(host="localhost",db="research",user="root",passwd="")
+    connector = MySQLdb.connect(host="localhost",db="proposal-recommender",user="root",passwd="")
     connector.autocommit(True)
     cursor = connector.cursor()
 
