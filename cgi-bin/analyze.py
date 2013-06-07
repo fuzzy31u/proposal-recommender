@@ -132,7 +132,7 @@ def main():
     t = Template(filename = dirpath + "/templates/analyze.html")
 
 #    ip = os.environ["REMOTE_ADDR"]
-    ip = "54.249.120.194"
+    ip = "localhost"
     data = {"ip": ip, "page": page, "totalLikeCnt": totalLikeCnt, "dispList": dispList, "userId": userId}
 
     html = t.render(**data)
