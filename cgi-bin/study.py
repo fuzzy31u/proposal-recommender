@@ -75,7 +75,7 @@ def main():
     t = Template(filename = dirpath + "/templates/study.html")
  
 #    ip = os.environ["REMOTE_ADDR"]
-    ip = "54.249.120.194"
+    ip = "localhost"
     data = {"list": list, "ip": ip, "page": page, "userId": userId}
  
     html = t.render(**data)
